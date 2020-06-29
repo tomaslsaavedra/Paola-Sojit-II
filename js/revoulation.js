@@ -320,6 +320,7 @@ jsFileLocation:"//localhost/revslider-standalone/revslider/public/assets/js/",
         visibilityLevels: [1240, 1024, 778, 480],
         gridwidth: [1780, 1024, 778, 480],
         gridheight: [1000, 900, 800, 700],
+        
         lazyType: "none",
         minHeight: "700",
         shadow: 0,
