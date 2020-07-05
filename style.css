@@ -13855,8 +13855,8 @@ Contagion Area
           font-size: 14px;
           line-height: 22px; } }
   .single-contagion:hover .contagion-image {
-    -webkit-animation: shake-horizontal 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-    animation: shake-horizontal 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both; }
 
 .single-sympotom {
   display: -webkit-box;
@@ -13960,8 +13960,8 @@ Contagion Area
           font-size: 14px;
           line-height: 22px; } }
   .single-sympotom:hover .sympotom-thumb {
-    -webkit-animation: shake-horizontal 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-    animation: shake-horizontal 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both; }
 
 .country-area {
   top: 0;
@@ -14083,8 +14083,8 @@ Contagion Area
         font-size: 18px;
         line-height: 22px; } }
   .single-prevination:hover .prevination-iamge {
-    -webkit-animation: shake-horizontal 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-    animation: shake-horizontal 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both; }
 
 .single-hand-wash {
   text-align: center; }
@@ -14109,59 +14109,71 @@ Contagion Area
         font-size: 15px;
         line-height: 22px; } }
   .single-hand-wash:hover .hand-wash-image {
-    -webkit-animation: shake-horizontal 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-    animation: shake-horizontal 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both; }
 
 /**
  * ----------------------------------------
- * animation shake-horizontal
+ * animation heartbeat
  * ----------------------------------------
  */
-@-webkit-keyframes shake-horizontal {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  10%,
-  30%,
-  50%,
-  70% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px); }
-  20%,
-  40%,
-  60% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px); }
-  80% {
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px); }
-  90% {
-    -webkit-transform: translateX(-8px);
-    transform: translateX(-8px); } }
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; } }
 
-@keyframes shake-horizontal {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  10%,
-  30%,
-  50%,
-  70% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px); }
-  20%,
-  40%,
-  60% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px); }
-  80% {
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px); }
-  90% {
-    -webkit-transform: translateX(-8px);
-    transform: translateX(-8px); } }
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; } }
 
 /* ----------------------
 Testimonial Area 
@@ -17496,8 +17508,8 @@ Dividers Area
         animation-iteration-count: infinite; }
     .animated-dot.light-color .signal {
       background-color: #fff !important;
-      -webkit-animation: animationSignal cubic-bezier(0, 0.1, 0.1, 0.25) 2s;
-      animation: animationSignal cubic-bezier(0, 0.1, 0.1, 0.25) 2s;
+      -webkit-animation: animationSignalTwo cubic-bezier(0, 0.1, 0.1, 0.25) 2s;
+      animation: animationSignalTwo cubic-bezier(0, 0.1, 0.1, 0.25) 2s;
       -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
       transform-origin: 50% 50%;
@@ -22046,7 +22058,8 @@ Shop Sidebar
       width: 100%;
       margin-bottom: 40px; }
       .compare-table .table tbody tr td.product-image-title .image img {
-        max-width: 100%; }
+        max-width: 100%;
+        width: 100%; }
     .compare-table .table tbody tr td.product-image-title .category {
       clear: both;
       color: #454545;
@@ -23185,7 +23198,7 @@ header.br_header.header-default.vertical-slide-portfolio {
 
 .headroom--sticky.headroom--not-top {
   background: rgba(0, 0, 0, 0.9);
-  background-color: rgba(72, 37, 68, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -26300,6 +26313,8 @@ Prresentation Area
   line-height: 2;
   font-family: "louis_george_caferegular";
   color: #ffffff; }
+  .copyright .copyright-right p a {
+    color: #fff; }
 
 .copyright.text-var-2 .copyright-left ul.bk-copyright-menu li a {
   font-family: "Poppins", sans-serif;
@@ -28243,7 +28258,7 @@ body.template-color-5 .testimonial--horizontal--active .swiper-pagination-custom
   background: #482544; }
 
 body.template-color-5 .slider-business .video-btn a .video-icon.secondary-color {
-  background: #482544 !important; }
+  background: #482544!important; }
 
 body.template-color-5 a.brook-btn.bk-btn-yellow, body.template-color-5 button.brook-btn.bk-btn-yellow {
   background: #482544;
@@ -28373,7 +28388,7 @@ body.template-color-5 .team-heading .heading-right button i {
   color: #482544; }
 
 body.template-color-5 .team-heading .heading-right button:hover {
-  color: #482544 !important; }
+  color: #482544!important; }
 
 body.template-color-5 .has-center-content .has-centerinner .content h1.heading::before {
   background-color: #482544; }
@@ -28414,19 +28429,19 @@ body.template-color-5 button.brook-btn.bk-btn-theme {
   color: #fff; }
 
 body.template-color-5 .btn-essential:hover {
-  background: #482544 !important;
-  border-color: #482544 !important;
+  background: #482544!important;
+  border-color: #482544!important;
   color: #fff; }
 
 body.template-color-5 .red-border {
-  border-color: #482544 !important; }
+  border-color: #482544!important; }
 
 body.template-color-5 .slick-arrow-center.slick-arrow-rounded .slick-btn:hover {
   background-color: #482544;
   color: #fff; }
 
 body.template-color-5 .single-svg-icon-box .svg-icon svg * {
-  stroke: #482544 !important; }
+  stroke: #482544!important; }
 
 body.template-color-5 .single-svg-icon-box:hover .svg-icon svg * {
   stroke: #fff !important; }
@@ -28511,15 +28526,15 @@ body.template-color-5 .video-btn a .video-icon {
 
 body.template-color-5 .video-btn-2 .icon-gradient::before {
   background-color: #482544;
-  background-image: -webkit-linear-gradient(223deg, #899664 0, #482544 100%);
-  background-image: -o-linear-gradient(223deg, #899664 0, #482544 100%);
-  background-image: linear-gradient(-133deg, #899664 0, #482544 100%); }
+  background-image: -webkit-linear-gradient(223deg, #899664 0, #482544100%);
+  background-image: -o-linear-gradient(223deg, #899664 0, #482544100%);
+  background-image: linear-gradient(-133deg, #899664 0, #482544100%); }
 
 body.template-color-5 .video-btn-2 .icon-gradient::after {
   background-color: #482544;
-  background-image: -webkit-linear-gradient(223deg, #899664 0, #482544 100%);
-  background-image: -o-linear-gradient(223deg, #899664 0, #482544 100%);
-  background-image: linear-gradient(-133deg, #899664 0, #482544 100%); }
+  background-image: -webkit-linear-gradient(223deg, #899664 0, #482544100%);
+  background-image: -o-linear-gradient(223deg, #899664 0, #482544100%);
+  background-image: linear-gradient(-133deg, #899664 0, #482544100%); }
 
 body.template-color-5 .single-motive-speach .icon i {
   color: #482544; }
@@ -28597,7 +28612,7 @@ body.template-color-5 .ht-pricing-list-view thead tr th.pricing-header .feature-
   background: #482544; }
 
 body.template-color-5 .testimonial-color-variation .slick-center .testimonial_style--1.bg-dark {
-  background: #482544 !important; }
+  background: #482544!important; }
 
 body.template-color-5 .basic-modern-dots .dot {
   background-color: #482544; }
